@@ -1,12 +1,12 @@
 {
-    "id": "BIBO2 single E2",
+    "id": "BIBO2 Single E2",
     "version": 2,
-    "name": "BIBO2 single E2",
+    "name": "BIBO2 Single E2",
     "inherits": "fdmprinter",
     "metadata": {
         "visible": true,
-        "author": "na",
-        "manufacturer": "na",
+        "author": "unknown",
+        "manufacturer": "BIBO",
         "category": "Other",
         "file_formats": "text/x-gcode",
         "has_materials": true,
@@ -15,11 +15,14 @@
             "0": "BIBO2 E2a",
             "1": "BIBO2 E2b"
         },
-        "first_start_actions": ["MachineSettingsAction"]
+        "first_start_actions": [
+            "MachineSettingsAction"
+        ]
     },
-
     "overrides": {
-        "machine_name": { "default_value": "BIBO2 single E2" },
+        "machine_name": { 
+            "default_value": "BIBO2 Single E2" 
+        },
         "machine_width": {
             "default_value": 214
         },
@@ -33,10 +36,8 @@
             "default_value": true
         },
         "machine_heated_bed": {
-                                    "default_value": true
-        
+            "default_value": true
         },
-
         "machine_nozzle_size": {
             "default_value": 0.4
         },
@@ -46,20 +47,31 @@
         "machine_nozzle_cool_down_speed": {
             "default_value": 2
         },
-        "machine_head_with_fans_polygon":
-        {
+        "machine_head_with_fans_polygon": {
             "default_value": [
-                [ -68.18, 64.63 ],
-                [ -68.18, -47.38 ],
-                [ 35.18, 64.63 ],
-                [ 35.18, -47.38 ]
+                [
+                    -68.18,
+                    64.63
+                ],
+                [
+                    -68.18,
+                    -47.38
+                ],
+                [
+                    35.18,
+                    64.63
+                ],
+                [
+                    35.18,
+                    -47.38
+                ]
             ]
         },
         "material_diameter": {
             "default_value": 1.75
         },
         "gantry_height": {
-            "default_value": 12
+            "value": "12"
         },
         "machine_use_extruder_offset_to_offset_coords": {
             "default_value": true
