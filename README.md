@@ -3,8 +3,9 @@ My personal collection BIBO2 Ultimaker Cura 3D Print Profiles - use these at you
 
 ## Profile Usage Instructions
 There are two tpyes of profiles in this repo, each in their own folder, namely:
-    a. printer - BIBO Printer Profiles. One for when printing with BOTH extruders (DUAL), or single extruder prints (E1 and E2). 
-    b. print_profile - Profile for different types of prints, namely, PLA, ABS, WOOD, Prototyping, Moving parts and so on. 
+    a. 'resources/defnitions' - BIBO2 Printer Profiles. One for when printing with BOTH extruders (DUAL), or single extruder prints (E1 and E2). 
+    b. 'extruders' - BIBO2 Extruder configuration
+    c. print_profile - Profile for different types of prints, namely, PLA, ABS, WOOD, Prototyping, Moving parts and so on. 
 
 1. Install Ultimaker Cura on your computer. The details are here:
 https://ultimaker.com/en/resources/51943-installation-ultimaker-cura
@@ -15,7 +16,7 @@ Do not open Ultimaker Cura after installation. If you open Ultimaker Cura for th
         Copy files in 'printer' folder to "\Program Files\ Ultimaker Cura XX.XX.XX\resources\definitions"
     b. OSX/MAC Users: 
         Right click on your Ultimaker Cura application file, and choose "Show Package Contents". 
-        Copy files in 'print_profile' folder to "Contents/Resources/resources/definitions"
+        Copy files in 'resources/defnitions' AND 'extruders' folder into their respective folders in "Contents/Resources/resources/"
 4. Open Ultimaker Cura, then add a new printer through menu (Preferences-Printers-Add). You'll see the BIBO2 printers listed under the Other category. Add the BIBO2 printers one by one.
 
 ## Print Slicing Profile Usage Instructions
