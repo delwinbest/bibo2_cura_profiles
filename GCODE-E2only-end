@@ -1,14 +1,16 @@
 ;BIBO End GCode
-M107
-G91 ; Relative positioning
-G1 Z1 F100
-M104 T0 S0
-M104 T1 S0
-G1 X-20 Y-20 F3000
-G28 X0 Y0
-G90 ; Absolute positioning
-G92 E0 ; Reset extruder position
-M140 S0 ; Disable heated bed
-M84 ; Turn steppers off
+G91                 ; Relative positioning
+G1 Z1 F100          ; Relative positioning
+M104 T0 S0          ; Set Hotend Temperature
+M104 T1 S0          ; Set Hotend Temperature
+G1 Z1 F100          ; Relative positioning
+G1 E-1 F300         ; Retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+0.5 E-2 X-20 Y-20 F300 ;move Z up a bit and retract filament even more
+G28 X0 Y0           ; Move X/Y to min endstops, so the head is out of the way
+G90                 ; Absolute positioning
+G92 E0              ; Reset extruder position
+M140 S0             ; Disable heated bed
+M107                ; Disable Fan
+M84                 ; Turn steppers off
 M117 BIBO Print complete
                         
