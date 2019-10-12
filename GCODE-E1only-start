@@ -3,13 +3,15 @@ M109 T1 S170  ;preheat the other extruder, so it will not knock or ruin the prin
 G90 ; absolute mode
 G21 ; metric values
 M82 ; Extruder in absolute mode
-M107
-G28
+M107       ;start with the fan off
+G28 X0 Y0  ;move X/Y to min endstops
+G28 Z0     ;move Z to min endstops
 G1 Z2 F400
 T0
 G90
 G92 E0
 G28
+G29 ; Auto level
 G1 Y0 F1200 E0
 G92 E0
 G1 X-15.0 Y-92.9 Z0.3 F2400.0		; move to start-line position

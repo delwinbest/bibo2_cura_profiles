@@ -1,12 +1,15 @@
-G21        ;metric values
-G90        ;absolute positioning
+;Startcode BIBO printers
+G90 ; absolute mode
+G21 ; metric values
 M107       ;start with the fan off
 G28 X0 Y0  ;move X/Y to min endstops
 G28 Z0     ;move Z to min endstops
 G1 Z2.0 F400 ;move the platform down 15mm
 T0
+G90
 G92 E0
 G28
+G29 ; Auto level
 G1 Y0 F1200 E0
 G92 E0
 M117 BIBO Printing...
